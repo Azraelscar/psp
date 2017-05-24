@@ -1,0 +1,83 @@
+doctype
+html(lang="en")
+  head
+    // Required meta tags
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+    title PSP 3000 SONY
+    // PSP CSS
+    link(rel="stylesheet" href="css/psp-3000.css")
+  body
+    h1.psp-title PSP 3000 - SONY
+
+    div.psp-3000
+      
+      div.psp-inner
+        div.oval-half.oval-half--top-left
+        div.oval-half.oval-half--top-right
+        div.oval-half.oval-half--bottom-left
+        div.oval-half.oval-half--bottom-right
+        
+        input.switch#switch(type="checkbox" name="switch")
+        label.label(for="switch")
+        
+        div.controls.controls--left
+          p.sony SONY
+          div.speaker.speaker--left
+          div.d-pad
+            div.btn-direction.up
+            div.btn-direction.right
+            div.btn-direction.down
+            div.btn-direction.left
+          div.analog-stick
+            div.stick
+          div.indicator.indicator--memory
+            div.led.led--memory
+            div.icon-memory
+          div.indicator.indicator--wifi
+            div.led.led--wifi
+            div.icon-wifi
+        // END LEFT CONTROLS    
+        
+        div.display
+          video.screen#video(preload="none")
+            source(src="video/PSP-startup.webm" type="video/webm")
+            source(src="video/PSP-startup.mp4" type="video/mp4")
+        // END DISPLAY
+        
+        div.controls.controls--right
+          div.speaker.speaker--right
+          div.d-buttons
+            div.btn-play.btn-tiangle
+            div.btn-play.btn-circle
+            div.btn-play.btn-cross
+            div.btn-play.btn-square
+          div.indicator.indicator--power
+            p.power POWER
+            div.led.led--power
+          div.indicator.indicator--hold
+            p.hold HOLD
+            div.led.led--hold
+        // END RIGHT CONTROLS
+        
+        div.controls.controls--bottom
+          div.d-option
+            div.btn-option.btn-home
+            div.btn-vol-group
+              div.btn-option.btn-vol.btn-vol--minus
+              p.vol VOL
+              div.btn-option.btn-vol.btn-vol--plus
+            div.microphone
+            img.psp(src="icons/PSP-logo.png")
+            
+            div.btn-group-display-sound
+              div.btn-option.btn-display
+              div.btn-option.btn-sound
+            div.btn-option.btn-select SELECT
+            div.btn-option.btn-start START
+        //END BOTTOM CONTROLS
+      div.shadow
+    // jQuery library
+    script(src="js/jQuery/jquery.min.js")
+    // PSP Js
+    script(src="js/psp-3000.js")

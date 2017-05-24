@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>PSP 3000 SONY</title>
+    <!-- PSP CSS-->
+    <link rel="stylesheet" href="css/psp-3000.css">
+  </head>
+  <body>
+    <h1 class="psp-title">PSP 3000 - SONY</h1>
+    <div class="psp-3000">
+      <div class="psp-inner">
+        <div class="oval-half oval-half--top-left"></div>
+        <div class="oval-half oval-half--top-right"></div>
+        <div class="oval-half oval-half--bottom-left"></div>
+        <div class="oval-half oval-half--bottom-right"></div>
+        <input class="switch" id="switch" type="checkbox" name="switch">
+        <label class="label" for="switch"></label>
+        <div class="controls controls--left">
+          <p class="sony">SONY</p>
+          <div class="speaker speaker--left"></div>
+          <div class="d-pad">
+            <div class="btn-direction up"></div>
+            <div class="btn-direction right"></div>
+            <div class="btn-direction down"></div>
+            <div class="btn-direction left"></div>
+          </div>
+          <div class="analog-stick">
+            <div class="stick"></div>
+          </div>
+          <div class="indicator indicator--memory">
+            <div class="led led--memory"></div>
+            <div class="icon-memory"></div>
+          </div>
+          <div class="indicator indicator--wifi">
+            <div class="led led--wifi"></div>
+            <div class="icon-wifi"></div>
+          </div>
+        </div>
+        <!-- END LEFT CONTROLS    -->
+        <div class="display">
+          <video class="screen" id="video" preload="none">
+            <source src="video/PSP-startup.webm" type="video/webm">
+            <source src="video/PSP-startup.mp4" type="video/mp4">
+          </video>
+        </div>
+        <!-- END DISPLAY-->
+        <div class="controls controls--right">
+          <div class="speaker speaker--right"></div>
+          <div class="d-buttons">
+            <div class="btn-play btn-tiangle"></div>
+            <div class="btn-play btn-circle"></div>
+            <div class="btn-play btn-cross"></div>
+            <div class="btn-play btn-square"></div>
+          </div>
+          <div class="indicator indicator--power">
+            <p class="power">POWER</p>
+            <div class="led led--power"></div>
+          </div>
+          <div class="indicator indicator--hold">
+            <p class="hold">HOLD</p>
+            <div class="led led--hold"></div>
+          </div>
+        </div>
+        <!-- END RIGHT CONTROLS-->
+        <div class="controls controls--bottom">
+          <div class="d-option">
+            <div class="btn-option btn-home"></div>
+            <div class="btn-vol-group">
+              <div class="btn-option btn-vol btn-vol--minus"></div>
+              <p class="vol">VOL</p>
+              <div class="btn-option btn-vol btn-vol--plus"></div>
+            </div>
+            <div class="microphone"></div><img class="psp" src="icons/PSP-logo.png">
+            <div class="btn-group-display-sound">
+              <div class="btn-option btn-display"></div>
+              <div class="btn-option btn-sound"></div>
+            </div>
+            <div class="btn-option btn-select">SELECT</div>
+            <div class="btn-option btn-start">START</div>
+          </div>
+        </div>
+        <!--END BOTTOM CONTROLS-->
+      </div>
+      <div class="shadow"></div>
+    </div>
+    <!-- jQuery library-->
+    <script src="js/jQuery/jquery.min.js"></script>
+    <!-- PSP Js-->
+    <script src="js/psp-3000.js"></script>
+  </body>
+</html>
